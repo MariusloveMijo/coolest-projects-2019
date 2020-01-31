@@ -1,22 +1,47 @@
 {
-  "name": "coolest-projects-2019",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Cicerooo/coolest-projects-2019.git"
-  },
-  "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Cicerooo/coolest-projects-2019/issues"
-  },
-  "homepage": "https://github.com/Cicerooo/coolest-projects-2019#readme",
-  "dependencies": {
-    "git-repo-watch": "^1.0.0"
-  }
+	"name": "coolest-projects-2019",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"format": "npx prettier \"src/**/*.{js,html}\" --write",
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
+		"build-watch": "parcel watch src/client/index.html",
+		"start-watch": "nodemon src/server/index.js",
+		"dev": "concurrently --kill-others \"npm run start-watch\" \"npm run build-watch\"",
+		"build": "parcel build src/client/index.html",
+		"start": "npm run build && node src/server/index.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Cicerooo/coolest-projects-2019.git"
+	},
+	"author": "",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/Cicerooo/coolest-projects-2019/issues"
+	},
+	"homepage": "https://github.com/Cicerooo/coolest-projects-2019#readme",
+	"dependencies": {
+		"concurrently": "^5.1.0",
+		"express": "^4.17.1",
+		"handlebars": "^4.7.2",
+		"html-webpack-plugin": "^3.2.0",
+		"mongodb": "^3.5.2",
+		"nodemon": "^2.0.2",
+		"parcel-bundler": "^1.12.4",
+		"react": "^16.12.0",
+		"react-dom": "^16.12.0"
+	},
+	"devDependencies": {
+		"babel-eslint": "^10.0.3",
+		"eslint": "^6.8.0",
+		"eslint-config-prettier": "^6.10.0",
+		"eslint-plugin-import": "^2.20.0",
+		"eslint-plugin-jsx-a11y": "^6.2.3",
+		"eslint-plugin-react": "^7.18.0",
+		"git-repo-watch": "^1.0.0",
+		"prettier": "^1.19.1"
+	}
 }
