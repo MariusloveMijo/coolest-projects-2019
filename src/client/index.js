@@ -1,5 +1,5 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import App from "./App";
+import Vue from "vue";
+import router from "./router";
+import App from "./App.vue";
 
-ReactDOM.render(<App />, document.getElementById("app"));
+new Vue({ router, render: createElement => createElement(App) }).$mount("#app");
