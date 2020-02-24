@@ -62,4 +62,4 @@ app.use("/", express.static("dist"));
 app.get("/", (req, res) => {
 	res.sendFile(path.resolve(__dirname, "/../../dist/index.html"));
 });
-app.listen(8000, () => console.log("poopty doop"));
+app.listen(8000, () => console.log(`Un mesaj normal pe portul 8000`));
