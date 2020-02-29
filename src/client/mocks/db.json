@@ -1,0 +1,57 @@
+{
+  "habits": [
+    {
+      "id": 1,
+      "name": "Run five kilometers a day",
+      "subjectId": 1,
+      "tracking": {
+        "target": 3,
+        "completed": 1
+      }
+    },
+    {
+      "id": 2,
+      "name": "Eat at least a friut",
+      "subjectId": 2,
+      "tracking": {
+        "target": 4,
+        "completed": 2
+      }
+    },
+    {
+      "id": 3,
+      "name": "read 20 pages",
+      "subjectId": 3,
+      "tracking": {
+        "target": 5,
+        "completed": 4
+      }
+    },
+    {
+      "name": "drink more water",
+      "id": 4
+    },
+    {
+      "name": "Take a shower daily",
+      "id": 5
+    },
+    {
+      "name": "eat an orange",
+      "id": 6
+    }
+  ],
+  "subjects": [
+    {
+      "id": 1,
+      "name": "Sports"
+    },
+    {
+      "id": 2,
+      "name": "Diet"
+    },
+    {
+      "id": 3,
+      "name": "Knowledge"
+    }
+  ]
+}

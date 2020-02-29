@@ -9,7 +9,8 @@
 		"build-watch": "parcel watch src/client/index.html",
 		"start-watch": "nodemon src/server/index.js",
 		"build": "parcel build src/client/index.html",
-		"start": "npm run build && node src/server/index.js"
+		"start": "npm run build && node src/server/index.js",
+		"mock-data": "json-server --watch src/client/mocks/db.json"
 	},
 	"repository": {
 		"type": "git",
@@ -22,11 +23,13 @@
 	},
 	"homepage": "https://github.com/Cicerooo/coolest-projects-2019#readme",
 	"dependencies": {
+		"axios": "^0.19.2",
 		"express": "^4.17.1",
 		"mongodb": "^3.5.2",
 		"nodemon": "^2.0.2",
 		"parcel-bundler": "^1.12.4",
 		"vue": "^2.6.11",
+		"vue-hot-reload-api": "^2.3.4",
 		"vue-router": "^3.1.5"
 	},
 	"devDependencies": {
@@ -37,6 +40,7 @@
 		"eslint-plugin-import": "^2.20.0",
 		"eslint-plugin-jsx-a11y": "^6.2.3",
 		"eslint-plugin-react": "^7.18.0",
+		"json-server": "^0.16.1",
 		"prettier": "^1.19.1",
 		"sass": "^1.25.0",
 		"vue-template-compiler": "^2.6.11"
