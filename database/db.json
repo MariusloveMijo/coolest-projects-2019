@@ -5,57 +5,57 @@
       "name": "Run five kilometers a day",
       "subjectId": 1,
       "tracking": {
-        "target": 3,
-        "completed": 1
-      }
-    },
+        "times": 3,
+        "days": 7
+      },
+      "createdAt":123, 
+      "userId":1
+    }
+  ],
+  "logs":[
     {
-      "id": 2,
-      "name": "Eat at least a friut",
-      "subjectId": 2,
-      "tracking": {
-        "target": 4,
-        "completed": 2
-      }
-    },
-    {
-      "id": 3,
-      "name": "read 20 pages",
-      "subjectId": 3,
-      "tracking": {
-        "target": 5,
-        "completed": 4
-      }
-    },
-    {
-      "name": "drink more water",
-      "id": 4
-    },
-    {
-      "name": "Take a shower daily",
-      "id": 5
-    },
-    {
-      "name": "eat an orange",
-      "id": 6
-    },
-    {
-      "name": "Run",
-      "id": 7
+      "id":1,
+      "habitId":1,
+      "userId":1,
+      "completedAt":123
     }
   ],
   "subjects": [
     {
       "id": 1,
-      "name": "Sports"
+      "name": "Physical Health"
     },
     {
       "id": 2,
-      "name": "Diet"
+      "name": "Personal Growth"
     },
     {
       "id": 3,
-      "name": "Knowledge"
+      "name": "Career"
+    },
+    {
+      "id":4,
+      "name": "Education"
+
+    },
+    {
+      "id":5,
+      "name": "Family"
+    },
+    {
+      "id":6,
+      "name": "Relationships"
+    },
+    {
+      "id":7,
+      "name": "Finances"
+    }
+  ],
+  "users":[
+    {
+      "id":1,
+      "name":"admin",
+      "password": "password"
     }
   ]
 }
