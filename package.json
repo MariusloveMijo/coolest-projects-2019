@@ -6,7 +6,7 @@
 	"scripts": {
 		"format": "npx prettier \"src/**/*.{js,html}\" --write",
 		"lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
-		"build-watch": "parcel watch src/index.html",
+		"build-watch": "parcel src/index.html",
 		"build": "parcel build src/index.html",
 		"server-watch": "json-server --watch database/db.json",
 		"start": "npm run build && json-server database/db.json"
